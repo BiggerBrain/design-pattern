@@ -3,7 +3,7 @@ package behavioral.patterns.observer;
 import lombok.extern.log4j.Log4j2;
 
 /**
- * @author lishixiong on 2017/11/10.
+ * @author lishixiong
  */
 @Log4j2
 public class CurrentConditionDisplay implements Observer, DisplayElement {
@@ -14,12 +14,12 @@ public class CurrentConditionDisplay implements Observer, DisplayElement {
 
     public CurrentConditionDisplay(Subject subject) {
         this.subject = subject;
-        subject.registerObserver(this);
+        this.subject.registerObserver(this);
     }
 
     @Override
     public void display() {
-        log.info("temp : " + temp + "\t humidity : " + humidity + "\t pressure : " + pressure);
+        log.info("温度 : " + temp + "\t 湿度 : " + humidity + "\t 气压 : " + pressure);
     }
 
     @Override

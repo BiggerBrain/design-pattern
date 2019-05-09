@@ -4,26 +4,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author lishixiongon 2017/11/10.
+ * @author lishixiongon ConcreteObserver,具体观察者
  */
-public class WeatherData implements Subject {
+public class WeatherSubject implements Subject {
+    /**
+     * 温度
+     */
     private float          temp;
     private float          humidity;
     private float          pressure;
     private List<Observer> observers;
 
-    public WeatherData() {
+    public WeatherSubject() {
         observers = new ArrayList<>();
     }
 
     @Override
-    public void registerObserver(Observer o) {
-        observers.add(o);
+    public void registerObserver(Observer observer) {
+        observers.add(observer);
     }
 
     @Override
-    public void removeObserver(Observer o) {
-        int i = observers.indexOf(o);
+    public void removeObserver(Observer observer) {
+        int i = observers.indexOf(observer);
         if (i >= 0) {
             observers.remove(i);
         }
@@ -31,12 +34,12 @@ public class WeatherData implements Subject {
 
     @Override
     public void notifyObserver() {
-        for (Observer o : observers) {
-            o.update(temp, humidity, pressure);
+        for (Observer observer : observers) {
+            observer.update(temp, humidity, pressure);
         }
     }
 
-    public void messageChange() {
+    public void uodate() {
         notifyObserver();
     }
 
@@ -44,6 +47,6 @@ public class WeatherData implements Subject {
         this.humidity = humidity;
         this.temp = temp;
         this.pressure = pressure;
-        messageChange();
+        uodate();
     }
 }

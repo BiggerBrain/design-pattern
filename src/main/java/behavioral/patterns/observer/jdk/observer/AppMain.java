@@ -1,9 +1,9 @@
-package behavioral.patterns.observer.jdk_observer;
+package behavioral.patterns.observer.jdk.observer;
 
 import java.util.Observer;
 
 /**
- * @author lishixiong on 2017/11/10.
+ * @author lishixiong
  */
 public class
 AppMain {

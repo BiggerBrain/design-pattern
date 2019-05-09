@@ -1,6 +1,4 @@
-/**
- * Alipay.com Inc. Copyright (c) 2004-2019 All Rights Reserved.
- */
+
 package structural.patterns.filter;
 
 import lombok.extern.log4j.Log4j2;

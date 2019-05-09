@@ -3,7 +3,7 @@ package behavioral.patterns.command.example.entity;
 /**
  * 自动门
  *
- * @author lishixiong on 2017/11/10.
+ * @author lishixiong
  */
 public class GaragerDoor {
     public void up() {

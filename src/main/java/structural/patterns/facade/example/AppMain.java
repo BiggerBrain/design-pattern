@@ -1,7 +1,7 @@
 package structural.patterns.facade.example;
 
 /**
- * @author lishixiong on 2017/11/11.
+ * @author lishixiong
  */
 public class AppMain {
     public static void main(String[] args) {

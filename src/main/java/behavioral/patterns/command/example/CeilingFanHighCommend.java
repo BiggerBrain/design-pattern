@@ -4,7 +4,7 @@ import behavioral.patterns.command.example.entity.CeilingFan;
 import behavioral.patterns.observer.DisplayElement;
 
 /**
- * @author lishixiong on 2017/11/10.
+ * @author lishixiong
  */
 public class CeilingFanHighCommend implements Commend {
     CeilingFan ceilingFan;

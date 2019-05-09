@@ -3,7 +3,7 @@ package creational.patterns.single.inner.cls.singleton;
 import lombok.extern.log4j.Log4j2;
 
 /**
- * @author lishixiong on 2017/11/10.
+ * @author lishixiong
  */
 @Log4j2
 public class InnerSingleton {

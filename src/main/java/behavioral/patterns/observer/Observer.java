@@ -1,7 +1,7 @@
 package behavioral.patterns.observer;
 
 /**
- * @author lishixiong on 2017/11/10.
+ * @author lishixiong
  */
 public interface Observer {
     // 更新温度湿度气压

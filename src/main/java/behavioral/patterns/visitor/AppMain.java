@@ -1,22 +1,19 @@
+
 package behavioral.patterns.visitor;
 
-import behavioral.patterns.visitor.example.*;
+import java.util.List;
 
 /**
- * @author lishixiong 他人例子
+ *
+ * @author lishixiong
+ * @version 1.0: AppMain.java, v 0.1 2019年05月09日 20:11 lishixiong Exp $
  */
 public class AppMain {
-    public static void main(final String[] args) {
-        final ObjectStructure os = new ObjectStructure();
-        os.addElement(new GladiolusConcreteElement());
-        os.addElement(new ChrysanthemumConreteElement());
-
-        final GladiolusVisitor gVisitor = new GladiolusVisitor();
-        final ChrysanthemumVisitor chVisitor = new ChrysanthemumVisitor();
-
-        os.accept(gVisitor);
-        os.accept(chVisitor);
-
+    public static void main(String[] args) {
+        SmsVisitor visitor = new SmsVisitor();
+        List<Product> productList = ObjectStruture.getList();
+        for (Product product : productList) {
+            product.accept(visitor);
+        }
     }
-
 }

@@ -1,7 +1,7 @@
 package behavioral.patterns.command.example;
 
 /**
- * @author lishixiong on 2017/11/10.
+ * @author lishixiong
  */
 public class NoCommend implements Commend {
     @Override

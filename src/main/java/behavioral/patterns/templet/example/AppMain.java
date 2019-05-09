@@ -1,7 +1,7 @@
 package behavioral.patterns.templet.example;
 
 /**
- * @author lishixiong on 2017/11/11. 他人例子
+ * @author lishixiong   他人例子
  */
 public class AppMain {
     public static void main(String[] args) {

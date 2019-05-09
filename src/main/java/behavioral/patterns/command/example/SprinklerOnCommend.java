@@ -3,7 +3,7 @@ package behavioral.patterns.command.example;
 import behavioral.patterns.command.example.entity.Sprinkler;
 
 /**
- * @author lishixiong on 2017/11/10.
+ * @author lishixiong
  */
 public class SprinklerOnCommend implements Commend {
     Sprinkler sprinkler;

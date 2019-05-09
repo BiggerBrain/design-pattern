@@ -3,7 +3,7 @@ package behavioral.patterns.command.example;
 import behavioral.patterns.command.example.entity.CeilingFan;
 
 /**
- * @author lishixiong on 2017/11/10.
+ * @author lishixiong
  */
 public class CeilingFanOffCommend implements Commend {
     CeilingFan ceilingFan;

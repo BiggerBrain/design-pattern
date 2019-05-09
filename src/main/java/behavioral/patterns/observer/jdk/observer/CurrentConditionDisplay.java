@@ -1,4 +1,4 @@
-package behavioral.patterns.observer.jdk_observer;
+package behavioral.patterns.observer.jdk.observer;
 
 import lombok.extern.log4j.Log4j2;
 
@@ -6,7 +6,7 @@ import java.util.Observable;
 import java.util.Observer;
 
 /**
- * @author lishixiong on 2017/11/10.
+ * @author lishixiong
  */
 @Log4j2
 public class CurrentConditionDisplay implements Observer, DisplayElement {

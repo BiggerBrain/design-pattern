@@ -5,7 +5,7 @@ import lombok.extern.log4j.Log4j2;
 import java.util.Scanner;
 
 /**
- * @author lishixiong on 2017/11/11.
+ * @author lishixiong
  */
 @Log4j2
 public class Cafe extends CafeTeeBeverage {

@@ -10,7 +10,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * @author lishixiong on 2017/11/10.
+ * @author lishixiong
  */
 @Log4j2
 public class AppMain {

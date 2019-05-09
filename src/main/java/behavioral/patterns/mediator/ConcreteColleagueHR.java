@@ -1,6 +1,4 @@
-/**
- * Alipay.com Inc. Copyright (c) 2004-2019 All Rights Reserved.
- */
+
 package behavioral.patterns.mediator;
 
 import lombok.extern.log4j.Log4j2;
@@ -20,6 +18,6 @@ public class ConcreteColleagueHR extends Colleague {
     }
 
     public void getMessage(String msg) {
-        log.info(name+":"+msg);
+        log.info(name + "收到消息:" + msg);
     }
 }

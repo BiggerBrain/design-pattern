@@ -3,7 +3,7 @@ package behavioral.patterns.observer;
 import lombok.extern.log4j.Log4j2;
 
 /**
- * @author lishixiong on 2017/11/10.
+ * @author lishixiong 
  */
 @Log4j2
 public class ForcastDisplay implements Observer, DisplayElement {
@@ -19,7 +19,7 @@ public class ForcastDisplay implements Observer, DisplayElement {
 
     @Override
     public void display() {
-        log.info("fortemp : " + temp + "\t forhumidity : " + humidity + "\t forpressure : " + pressure);
+        log.info("温度 : " + temp + "\t 湿度 : " + humidity + "\t 气压 : " + pressure);
     }
 
     @Override
