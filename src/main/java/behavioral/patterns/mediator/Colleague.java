@@ -9,9 +9,10 @@ package behavioral.patterns.mediator;
  */
 public class Colleague {
     //同事类需要与其他同事类进行交互的，就交给中介者来处理。
-    protected AbstractMediator mediator;
-
-    public Colleague(AbstractMediator mediator) {
+    protected Mediator mediator;
+    protected String name;
+    public Colleague(String name,Mediator mediator) {
         this.mediator = mediator;
+        this.name=name;
     }
 }

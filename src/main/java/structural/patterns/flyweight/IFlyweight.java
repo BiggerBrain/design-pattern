@@ -4,9 +4,11 @@
 package structural.patterns.flyweight;
 
 /**
+ *
  * @author lishixiong
- * @version 1.0: IFlyweight.java, v 0.1 2019年05月06日 18:31 lishixiong Exp $
+ * @version 1.0: IFlyweight.java, v 0.1 2019年05月09日 11:44 lishixiong Exp $
  */
 public interface IFlyweight {
-    void operation(String extrinsicState);
+    //一个示意性方法，参数state是外蕴状态
+    void operation(String state);
 }

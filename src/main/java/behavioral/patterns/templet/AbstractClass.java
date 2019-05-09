@@ -9,12 +9,12 @@ package behavioral.patterns.templet;
  * 模板抽象类
  */
 public abstract class AbstractClass {
-    protected abstract void doSomething();
+    protected abstract void doSomeOperation();
 
-    protected abstract void doAnything();
+    protected abstract void doOtherOperation();
 
     public void templateMethod() {
-        this.doAnything();
-        this.doSomething();
+        this.doOtherOperation();
+        this.doSomeOperation();
     }
 }

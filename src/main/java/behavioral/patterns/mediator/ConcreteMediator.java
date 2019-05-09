@@ -3,22 +3,23 @@
  */
 package behavioral.patterns.mediator;
 
+import lombok.Data;
+
 /**
  * @author lishixiong
  * @version 1.0: ConcreteMediator.java, v 0.1 2019年05月08日 16:01 lishixiong Exp $
  */
-public class ConcreteMediator extends AbstractMediator {
-
+@Data
+public class ConcreteMediator extends Mediator {
+    private ConcreteColleagueHR hr;
+    private ConcreteColleagueRD rd;
     @Override
-    public void doSomething1() {
-        //调用同事类的方法，只要是public的方法都可以调用。
-        //super.c1.depMethod();
-        //  super.c2.depMethod();
-    }
-
-    @Override
-    public void doSomething2() {
-        // super.c1.selfMethod();
-        // super.c2.selfMethod();
+    public void constact(String message, Colleague colleague) {
+        if (colleague == hr) {
+            rd.getMessage(message);
+        }
+        else {
+            hr.getMessage(message);
+        }
     }
 }

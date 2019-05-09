@@ -10,6 +10,13 @@ package structural.patterns.flyweight;
 public class AppMain {
     public static void main(String[] args) {
         FlyweightFactory factory = new FlyweightFactory();
+        IFlyweight fly = factory.factory("sms");
+        fly.operation("开始状态");
 
+        fly = factory.factory("mail");
+        fly.operation("开始状态");
+
+        fly = factory.factory("sms");
+        fly.operation("运行状态");
     }
 }
