@@ -8,6 +8,7 @@ import lombok.extern.log4j.Log4j2;
 /**
  * @author lishixiong
  * @version 1.0: ConcreteColleagueRD.java, v 0.1 2019年05月08日 15:59 lishixiong Exp $
+ * 具体的同事类
  */
 @Log4j2
 public class ConcreteColleagueRD extends Colleague {
